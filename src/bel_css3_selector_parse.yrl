@@ -20,31 +20,6 @@
 %%% @end
 %%%---------------------------------------------------------------------
 
-%% Output example for "#foo > .bar + div.k1.k2 [id='baz']:hello(2):not(:where(div))::before, #bar + .baz.fizz div.buzz"
-%% [
-%%     {greater,{
-%%         [{id,"foo"}],
-%%         {plus,{
-%%             [{class,"bar"}],
-%%             {space,{
-%%                 [{type,{undefined,"div"}},{class,"k1"},{class,"k2"}],
-%%                 [{attrib,{undefined,"id",{'=',{string,"'baz'"}}}},
-%%                     {pseudo_class,{function,{"hello",[{number,"2"}]}}},
-%%                     {negation,
-%%                         {pseudo_class,{function,{"where",[{ident,"div"}]}}}},
-%%                     {pseudo_class,{ident,"before"}}]
-%%             }}
-%%         }}
-%%     }},
-%%     {plus,{
-%%         [{id,"bar"}],
-%%         {space,{
-%%             [{class,"baz"},{class,"fizz"}],
-%%             [{type,{undefined,"div"}},{class,"buzz"}]
-%%         }}
-%%     }}
-%% ].
-
 Nonterminals
 selectors_group selectors_combinator selector
 combinator
