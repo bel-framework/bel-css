@@ -1,4 +1,4 @@
-# bel_css
+# bel-framework/bel_css
 
 CSS utilities for Erlang.
 
@@ -8,9 +8,9 @@ CSS utilities for Erlang.
 
 ```erlang
 1> Selectors = "#foo > .bar + div.k1.k2 [id='baz']:hello(2):not(:where(div))::before, #bar + .baz.fizz div.buzz".
-"#foo > .bar + div.k1.k2 [id='baz']:hello(2):not(:where(div))::before, #bar + .baz.fizz div.buzz"
+"#foo > .bar + div.k1.k2 [id='baz']:hello(2):not(:where(div))::before, #bar + .baz.fizz div.buzz".
 
-2> {ok, Tokens, _} = bel_css_3_selector_scan:string(Selectors).
+2> {ok, Tokens, _} = bel_css:scan_css3(Selectors).
 {ok,[{hash,{1,1},"foo"},
      {greater,{1,5}},
      {space,{1,7}},
@@ -57,7 +57,7 @@ CSS utilities for Erlang.
      {ident,{1,92},"buzz"}],
     1}
 
-3> bel_css_3_selector_parse:parse(Tokens).
+3> bel_css:parse_css3(Tokens).
 {ok,[{greater,
          {[{id,"foo"}],
           {plus,
