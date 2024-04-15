@@ -1,7 +1,7 @@
 %%%---------------------------------------------------------------------
 %%% @copyright 2024 William Fank Thomé
 %%% @author William Fank Thomé <willilamthome@hotmail.com>
-%%% @doc bel_css3_selector_parse tests.
+%%% @doc bel_css_3_selector_parse tests.
 %%%
 %%% Copyright 2024 William Fank Thomé
 %%%
@@ -19,7 +19,7 @@
 %%%
 %%% @end
 %%%---------------------------------------------------------------------
--module(bel_css3_selector_parse_SUITE).
+-module(bel_css_3_selector_parse_SUITE).
 
 % -include_lib("common_test/include/ct.hrl").
 
@@ -170,8 +170,8 @@ parse(Config) when is_list(Config) ->
         }}
     ],
     String = "#foo > .bar + div.k1.k2 [id='baz']:hello(2):not(:where(div))::before, #bar + .baz.fizz div.buzz",
-    {ok, Tokens, _} = bel_css3_selector_scan:string(String),
-    {ok, Expect} = bel_css3_selector_parse:parse(Tokens),
+    {ok, Tokens, _} = bel_css_3_selector_scan:string(String),
+    {ok, Expect} = bel_css_3_selector_parse:parse(Tokens),
     ok.
 
 %%%=====================================================================

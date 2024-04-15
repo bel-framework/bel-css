@@ -1,7 +1,7 @@
 %%%---------------------------------------------------------------------
 %%% @copyright 2024 William Fank Thomé
 %%% @author William Fank Thomé <willilamthome@hotmail.com>
-%%% @doc CSS support module.
+%%% @doc CSS module.
 %%%
 %%% Copyright 2024 William Fank Thomé
 %%%
@@ -19,17 +19,17 @@
 %%%
 %%% @end
 %%%---------------------------------------------------------------------
--module(bel_css_parser).
+-module(bel_css).
 
 % CSS3
--export([ css3_scan/1, css3_parse/1 ]).
+-export([ scan_css3/1, parse_css3/1 ]).
 
 %%%=====================================================================
 %%% CSS3
 %%%=====================================================================
 
-css3_scan(String) ->
-    bel_css3_selector_scan:string(String).
+scan_css3(String) ->
+    bel_css_3_selector_scan:string(String).
 
-css3_parse(Tokens) ->
-    bel_css3_selector_parse:parse(Tokens).
+parse_css3(Tokens) ->
+    bel_css_3_selector_parse:parse(Tokens).

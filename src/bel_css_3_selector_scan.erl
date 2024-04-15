@@ -6,13 +6,13 @@
 %% property of the creator of the scanner and is not covered by that
 %% Copyright.
 
--module(bel_css3_selector_scan).
+-module(bel_css_3_selector_scan).
 
 -export([string/1,string/2,token/2,token/3,tokens/2,tokens/3]).
 -export([format_error/1]).
 
 %% User code. This is placed here to allow extra attributes.
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 95).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 95).
 
 % nothing here yet!
 
@@ -373,7 +373,7 @@ tab_size() -> 8.
 %% return signal either an unrecognised character or end of current
 %% input.
 
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.erl", 341).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.erl", 341).
 yystate() -> 82.
 
 yystate(89, Ics, Line, Col, Tlen, _, _) ->
@@ -1652,173 +1652,173 @@ yyaction(28, _, _, TokenLine, TokenCol) ->
 yyaction(_, _, _, _, _) -> error.
 
 -compile({inline,yyaction_0/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 58).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 58).
 yyaction_0(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { includes, TokenLoc } } .
 
 -compile({inline,yyaction_1/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 59).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 59).
 yyaction_1(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { dash_match, TokenLoc } } .
 
 -compile({inline,yyaction_2/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 60).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 60).
 yyaction_2(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { prefix_match, TokenLoc } } .
 
 -compile({inline,yyaction_3/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 61).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 61).
 yyaction_3(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { suffix_match, TokenLoc } } .
 
 -compile({inline,yyaction_4/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 62).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 62).
 yyaction_4(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { substring_match, TokenLoc } } .
 
 -compile({inline,yyaction_5/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 63).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 63).
 yyaction_5(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { plus, TokenLoc } } .
 
 -compile({inline,yyaction_6/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 64).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 64).
 yyaction_6(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { greater, TokenLoc } } .
 
 -compile({inline,yyaction_7/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 65).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 65).
 yyaction_7(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { comma, TokenLoc } } .
 
 -compile({inline,yyaction_8/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 66).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 66).
 yyaction_8(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { tilde, TokenLoc } } .
 
 -compile({inline,yyaction_9/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 67).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 67).
 yyaction_9(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { space, TokenLoc } } .
 
 -compile({inline,yyaction_10/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 68).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 68).
 yyaction_10(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { 'not', TokenLoc } } .
 
 -compile({inline,yyaction_11/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 69).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 69).
 yyaction_11(TokenChars) ->
      { error, "invalid syntax: " ++ TokenChars } .
 
 -compile({inline,yyaction_12/3}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 72).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 72).
 yyaction_12(TokenChars, TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { hash, TokenLoc, tl (TokenChars) } } .
 
 -compile({inline,yyaction_13/3}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 73).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 73).
 yyaction_13(TokenChars, TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { dimension, TokenLoc, TokenChars } } .
 
 -compile({inline,yyaction_14/3}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 74).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 74).
 yyaction_14(TokenChars, TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { function, TokenLoc, lists : droplast (TokenChars) } } .
 
 -compile({inline,yyaction_15/3}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 76).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 76).
 yyaction_15(TokenChars, TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { ident, TokenLoc, TokenChars } } .
 
 -compile({inline,yyaction_16/3}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 77).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 77).
 yyaction_16(TokenChars, TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { percentage, TokenLoc, TokenChars } } .
 
 -compile({inline,yyaction_17/3}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 78).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 78).
 yyaction_17(TokenChars, TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { number, TokenLoc, TokenChars } } .
 
 -compile({inline,yyaction_18/3}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 79).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 79).
 yyaction_18(TokenChars, TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { string, TokenLoc, TokenChars } } .
 
 -compile({inline,yyaction_19/0}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 80).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 80).
 yyaction_19() ->
      skip_token .
 
 -compile({inline,yyaction_20/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 83).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 83).
 yyaction_20(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { any, TokenLoc } } .
 
 -compile({inline,yyaction_21/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 84).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 84).
 yyaction_21(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { '.', TokenLoc } } .
 
 -compile({inline,yyaction_22/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 85).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 85).
 yyaction_22(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { '[', TokenLoc } } .
 
 -compile({inline,yyaction_23/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 86).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 86).
 yyaction_23(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { ']', TokenLoc } } .
 
 -compile({inline,yyaction_24/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 87).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 87).
 yyaction_24(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { '|', TokenLoc } } .
 
 -compile({inline,yyaction_25/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 88).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 88).
 yyaction_25(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { ':', TokenLoc } } .
 
 -compile({inline,yyaction_26/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 89).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 89).
 yyaction_26(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { ')', TokenLoc } } .
 
 -compile({inline,yyaction_27/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 90).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 90).
 yyaction_27(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { '-', TokenLoc } } .
 
 -compile({inline,yyaction_28/2}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css3_selector_scan.xrl", 91).
+-file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_scan.xrl", 91).
 yyaction_28(TokenLine, TokenCol) ->
     TokenLoc={TokenLine,TokenCol},
      { token, { '=', TokenLoc } } .
