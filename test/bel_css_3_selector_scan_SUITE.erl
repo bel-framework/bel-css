@@ -1,7 +1,7 @@
 %%%---------------------------------------------------------------------
 %%% @copyright 2024 William Fank Thomé
 %%% @author William Fank Thomé <willilamthome@hotmail.com>
-%%% @doc bel_css3_selector_scan tests.
+%%% @doc bel_css_3_selector_scan tests.
 %%%
 %%% Copyright 2024 William Fank Thomé
 %%%
@@ -19,7 +19,7 @@
 %%%
 %%% @end
 %%%---------------------------------------------------------------------
--module(bel_css3_selector_scan_SUITE).
+-module(bel_css_3_selector_scan_SUITE).
 
 % -include_lib("common_test/include/ct.hrl").
 
@@ -181,7 +181,7 @@ scan(Config) when is_list(Config) ->
         {ident,{1,92},"buzz"}
     ],
     String = "#foo > .bar + div.k1.k2 [id='baz']:hello(2):not(:where(div))::before, #bar + .baz.fizz div.buzz",
-    {ok, Expect, _} = bel_css3_selector_scan:string(String),
+    {ok, Expect, _} = bel_css_3_selector_scan:string(String),
     ok.
 
 %%%=====================================================================

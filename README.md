@@ -1,4 +1,4 @@
-bel_css_parser
+bel_css
 =====
 
 An OTP library

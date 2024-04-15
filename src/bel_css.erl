@@ -19,7 +19,7 @@
 %%%
 %%% @end
 %%%---------------------------------------------------------------------
--module(bel_css_parser).
+-module(bel_css).
 
 % CSS3
 -export([ css3_scan/1, css3_parse/1 ]).
@@ -29,7 +29,7 @@
 %%%=====================================================================
 
 css3_scan(String) ->
-    bel_css3_selector_scan:string(String).
+    bel_css_3_selector_scan:string(String).
 
 css3_parse(Tokens) ->
-    bel_css3_selector_parse:parse(Tokens).
+    bel_css_3_selector_parse:parse(Tokens).

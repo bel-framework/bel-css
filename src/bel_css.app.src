@@ -1,4 +1,4 @@
-{application, bel_css_parser,
+{application, bel_css,
  [{description, "An OTP library"},
   {vsn, "0.1.0"},
   {registered, []},
