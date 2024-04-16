@@ -32,4 +32,4 @@ scan_css3(String) ->
     bel_css_3_selector_scan:string(String).
 
 parse_css3(Tokens) ->
-    bel_css_3_selector_parse:parse(Tokens).
+    bel_css_3_selector_parser:parse(Tokens).

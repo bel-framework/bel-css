@@ -1,6 +1,6 @@
--module(bel_css_3_selector_parse).
+-module(bel_css_3_selector_parser).
 -export([parse/1, parse_and_scan/1, format_error/1]).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 167).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 167).
 
 value_of(Token) when is_tuple(Token), tuple_size(Token) =:= 3 ->
     element(3, Token).
@@ -194,7 +194,7 @@ yecctoken2string1(Other) ->
 
 
 
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.erl", 197).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.erl", 197).
 
 -dialyzer({nowarn_function, yeccpars2/7}).
 -compile({nowarn_unused_function,  yeccpars2/7}).
@@ -1713,7 +1713,7 @@ yeccgoto_universal(113=_S, Cat, Ss, Stack, T, Ts, Tzr) ->
 -compile({inline,yeccpars2_1_/1}).
 -dialyzer({nowarn_function, yeccpars2_1_/1}).
 -compile({nowarn_unused_function,  yeccpars2_1_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 69).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 69).
 yeccpars2_1_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1723,7 +1723,7 @@ yeccpars2_1_(__Stack0) ->
 -compile({inline,yeccpars2_2_/1}).
 -dialyzer({nowarn_function, yeccpars2_2_/1}).
 -compile({nowarn_unused_function,  yeccpars2_2_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 68).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 68).
 yeccpars2_2_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1733,7 +1733,7 @@ yeccpars2_2_(__Stack0) ->
 -compile({inline,yeccpars2_3_/1}).
 -dialyzer({nowarn_function, yeccpars2_3_/1}).
 -compile({nowarn_unused_function,  yeccpars2_3_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 65).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 65).
 yeccpars2_3_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1743,7 +1743,7 @@ yeccpars2_3_(__Stack0) ->
 -compile({inline,yeccpars2_4_/1}).
 -dialyzer({nowarn_function, yeccpars2_4_/1}).
 -compile({nowarn_unused_function,  yeccpars2_4_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 70).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 70).
 yeccpars2_4_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1753,7 +1753,7 @@ yeccpars2_4_(__Stack0) ->
 -compile({inline,yeccpars2_6_/1}).
 -dialyzer({nowarn_function, yeccpars2_6_/1}).
 -compile({nowarn_unused_function,  yeccpars2_6_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 54).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 54).
 yeccpars2_6_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1763,7 +1763,7 @@ yeccpars2_6_(__Stack0) ->
 -compile({inline,yeccpars2_7_/1}).
 -dialyzer({nowarn_function, yeccpars2_7_/1}).
 -compile({nowarn_unused_function,  yeccpars2_7_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 53).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 53).
 yeccpars2_7_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1773,7 +1773,7 @@ yeccpars2_7_(__Stack0) ->
 -compile({inline,yeccpars2_8_/1}).
 -dialyzer({nowarn_function, yeccpars2_8_/1}).
 -compile({nowarn_unused_function,  yeccpars2_8_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 137).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 137).
 yeccpars2_8_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1783,7 +1783,7 @@ yeccpars2_8_(__Stack0) ->
 -compile({inline,yeccpars2_9_/1}).
 -dialyzer({nowarn_function, yeccpars2_9_/1}).
 -compile({nowarn_unused_function,  yeccpars2_9_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 136).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 136).
 yeccpars2_9_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1793,7 +1793,7 @@ yeccpars2_9_(__Stack0) ->
 -compile({inline,yeccpars2_10_/1}).
 -dialyzer({nowarn_function, yeccpars2_10_/1}).
 -compile({nowarn_unused_function,  yeccpars2_10_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 75).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 75).
 yeccpars2_10_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1803,7 +1803,7 @@ yeccpars2_10_(__Stack0) ->
 -compile({inline,yeccpars2_11_/1}).
 -dialyzer({nowarn_function, yeccpars2_11_/1}).
 -compile({nowarn_unused_function,  yeccpars2_11_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 76).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 76).
 yeccpars2_11_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1813,7 +1813,7 @@ yeccpars2_11_(__Stack0) ->
 -compile({inline,yeccpars2_13_/1}).
 -dialyzer({nowarn_function, yeccpars2_13_/1}).
 -compile({nowarn_unused_function,  yeccpars2_13_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 72).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 72).
 yeccpars2_13_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1823,7 +1823,7 @@ yeccpars2_13_(__Stack0) ->
 -compile({inline,yeccpars2_14_/1}).
 -dialyzer({nowarn_function, yeccpars2_14_/1}).
 -compile({nowarn_unused_function,  yeccpars2_14_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 95).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 95).
 yeccpars2_14_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1833,7 +1833,7 @@ yeccpars2_14_(__Stack0) ->
 -compile({inline,yeccpars2_15_/1}).
 -dialyzer({nowarn_function, yeccpars2_15_/1}).
 -compile({nowarn_unused_function,  yeccpars2_15_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 73).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 73).
 yeccpars2_15_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1843,7 +1843,7 @@ yeccpars2_15_(__Stack0) ->
 -compile({inline,yeccpars2_16_/1}).
 -dialyzer({nowarn_function, yeccpars2_16_/1}).
 -compile({nowarn_unused_function,  yeccpars2_16_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 74).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 74).
 yeccpars2_16_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1853,7 +1853,7 @@ yeccpars2_16_(__Stack0) ->
 -compile({inline,yeccpars2_17_/1}).
 -dialyzer({nowarn_function, yeccpars2_17_/1}).
 -compile({nowarn_unused_function,  yeccpars2_17_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 106).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 106).
 yeccpars2_17_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1863,7 +1863,7 @@ yeccpars2_17_(__Stack0) ->
 -compile({inline,yeccpars2_21_/1}).
 -dialyzer({nowarn_function, yeccpars2_21_/1}).
 -compile({nowarn_unused_function,  yeccpars2_21_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 161).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 161).
 yeccpars2_21_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1873,7 +1873,7 @@ yeccpars2_21_(__Stack0) ->
 -compile({inline,yeccpars2_22_/1}).
 -dialyzer({nowarn_function, yeccpars2_22_/1}).
 -compile({nowarn_unused_function,  yeccpars2_22_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 103).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 103).
 yeccpars2_22_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1883,7 +1883,7 @@ yeccpars2_22_(__Stack0) ->
 -compile({inline,yeccpars2_24_/1}).
 -dialyzer({nowarn_function, yeccpars2_24_/1}).
 -compile({nowarn_unused_function,  yeccpars2_24_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 88).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 88).
 yeccpars2_24_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1893,7 +1893,7 @@ yeccpars2_24_(__Stack0) ->
 -compile({inline,yeccpars2_25_/1}).
 -dialyzer({nowarn_function, yeccpars2_25_/1}).
 -compile({nowarn_unused_function,  yeccpars2_25_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 87).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 87).
 yeccpars2_25_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1903,7 +1903,7 @@ yeccpars2_25_(__Stack0) ->
 -compile({inline,yeccpars2_26_/1}).
 -dialyzer({nowarn_function, yeccpars2_26_/1}).
 -compile({nowarn_unused_function,  yeccpars2_26_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 92).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 92).
 yeccpars2_26_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1913,7 +1913,7 @@ yeccpars2_26_(__Stack0) ->
 -compile({inline,yeccpars2_28_/1}).
 -dialyzer({nowarn_function, yeccpars2_28_/1}).
 -compile({nowarn_unused_function,  yeccpars2_28_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 89).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 89).
 yeccpars2_28_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1923,7 +1923,7 @@ yeccpars2_28_(__Stack0) ->
 -compile({inline,yeccpars2_29_/1}).
 -dialyzer({nowarn_function, yeccpars2_29_/1}).
 -compile({nowarn_unused_function,  yeccpars2_29_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 90).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 90).
 yeccpars2_29_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1933,7 +1933,7 @@ yeccpars2_29_(__Stack0) ->
 -compile({inline,yeccpars2_30_/1}).
 -dialyzer({nowarn_function, yeccpars2_30_/1}).
 -compile({nowarn_unused_function,  yeccpars2_30_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 91).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 91).
 yeccpars2_30_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -1943,7 +1943,7 @@ yeccpars2_30_(__Stack0) ->
 -compile({inline,yeccpars2_33_/1}).
 -dialyzer({nowarn_function, yeccpars2_33_/1}).
 -compile({nowarn_unused_function,  yeccpars2_33_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 83).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 83).
 yeccpars2_33_(__Stack0) ->
  [___4,___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -1953,7 +1953,7 @@ yeccpars2_33_(__Stack0) ->
 -compile({inline,yeccpars2_35_/1}).
 -dialyzer({nowarn_function, yeccpars2_35_/1}).
 -compile({nowarn_unused_function,  yeccpars2_35_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 85).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 85).
 yeccpars2_35_(__Stack0) ->
  [___5,___4,___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -1963,7 +1963,7 @@ yeccpars2_35_(__Stack0) ->
 -compile({inline,yeccpars2_36_/1}).
 -dialyzer({nowarn_function, yeccpars2_36_/1}).
 -compile({nowarn_unused_function,  yeccpars2_36_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 82).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 82).
 yeccpars2_36_(__Stack0) ->
  [___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -1973,7 +1973,7 @@ yeccpars2_36_(__Stack0) ->
 -compile({inline,yeccpars2_38_/1}).
 -dialyzer({nowarn_function, yeccpars2_38_/1}).
 -compile({nowarn_unused_function,  yeccpars2_38_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 84).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 84).
 yeccpars2_38_(__Stack0) ->
  [___4,___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -1983,7 +1983,7 @@ yeccpars2_38_(__Stack0) ->
 -compile({inline,yeccpars2_39_/1}).
 -dialyzer({nowarn_function, yeccpars2_39_/1}).
 -compile({nowarn_unused_function,  yeccpars2_39_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 97).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 97).
 yeccpars2_39_(__Stack0) ->
  [___2,___1 | __Stack] = __Stack0,
  [begin
@@ -1993,7 +1993,7 @@ yeccpars2_39_(__Stack0) ->
 -compile({inline,yeccpars2_40_/1}).
 -dialyzer({nowarn_function, yeccpars2_40_/1}).
 -compile({nowarn_unused_function,  yeccpars2_40_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 116).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 116).
 yeccpars2_40_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2003,7 +2003,7 @@ yeccpars2_40_(__Stack0) ->
 -compile({inline,yeccpars2_44_/1}).
 -dialyzer({nowarn_function, yeccpars2_44_/1}).
 -compile({nowarn_unused_function,  yeccpars2_44_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 119).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 119).
 yeccpars2_44_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2013,7 +2013,7 @@ yeccpars2_44_(__Stack0) ->
 -compile({inline,yeccpars2_46_/1}).
 -dialyzer({nowarn_function, yeccpars2_46_/1}).
 -compile({nowarn_unused_function,  yeccpars2_46_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 115).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 115).
 yeccpars2_46_(__Stack0) ->
  [___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2023,7 +2023,7 @@ yeccpars2_46_(__Stack0) ->
 -compile({inline,yeccpars2_48_/1}).
 -dialyzer({nowarn_function, yeccpars2_48_/1}).
 -compile({nowarn_unused_function,  yeccpars2_48_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 118).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 118).
 yeccpars2_48_(__Stack0) ->
  [___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2033,7 +2033,7 @@ yeccpars2_48_(__Stack0) ->
 -compile({inline,yeccpars2_49_/1}).
 -dialyzer({nowarn_function, yeccpars2_49_/1}).
 -compile({nowarn_unused_function,  yeccpars2_49_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 98).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 98).
 yeccpars2_49_(__Stack0) ->
  [___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2043,7 +2043,7 @@ yeccpars2_49_(__Stack0) ->
 -compile({inline,yeccpars2_52_/1}).
 -dialyzer({nowarn_function, yeccpars2_52_/1}).
 -compile({nowarn_unused_function,  yeccpars2_52_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 129).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 129).
 yeccpars2_52_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2053,7 +2053,7 @@ yeccpars2_52_(__Stack0) ->
 -compile({inline,yeccpars2_53_/1}).
 -dialyzer({nowarn_function, yeccpars2_53_/1}).
 -compile({nowarn_unused_function,  yeccpars2_53_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 110).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 110).
 yeccpars2_53_(__Stack0) ->
  [___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2063,7 +2063,7 @@ yeccpars2_53_(__Stack0) ->
 -compile({inline,yeccpars2_54_/1}).
 -dialyzer({nowarn_function, yeccpars2_54_/1}).
 -compile({nowarn_unused_function,  yeccpars2_54_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 131).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 131).
 yeccpars2_54_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2073,7 +2073,7 @@ yeccpars2_54_(__Stack0) ->
 -compile({inline,yeccpars2_55_/1}).
 -dialyzer({nowarn_function, yeccpars2_55_/1}).
 -compile({nowarn_unused_function,  yeccpars2_55_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 130).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 130).
 yeccpars2_55_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2083,7 +2083,7 @@ yeccpars2_55_(__Stack0) ->
 -compile({inline,yeccpars2_56_/1}).
 -dialyzer({nowarn_function, yeccpars2_56_/1}).
 -compile({nowarn_unused_function,  yeccpars2_56_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 126).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 126).
 yeccpars2_56_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2093,7 +2093,7 @@ yeccpars2_56_(__Stack0) ->
 -compile({inline,yeccpars2_57_/1}).
 -dialyzer({nowarn_function, yeccpars2_57_/1}).
 -compile({nowarn_unused_function,  yeccpars2_57_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 128).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 128).
 yeccpars2_57_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2103,7 +2103,7 @@ yeccpars2_57_(__Stack0) ->
 -compile({inline,yeccpars2_58_/1}).
 -dialyzer({nowarn_function, yeccpars2_58_/1}).
 -compile({nowarn_unused_function,  yeccpars2_58_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 127).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 127).
 yeccpars2_58_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2113,7 +2113,7 @@ yeccpars2_58_(__Stack0) ->
 -compile({inline,yeccpars2_59_/1}).
 -dialyzer({nowarn_function, yeccpars2_59_/1}).
 -compile({nowarn_unused_function,  yeccpars2_59_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 112).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 112).
 yeccpars2_59_(__Stack0) ->
  [___4,___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2123,7 +2123,7 @@ yeccpars2_59_(__Stack0) ->
 -compile({inline,yeccpars2_60_/1}).
 -dialyzer({nowarn_function, yeccpars2_60_/1}).
 -compile({nowarn_unused_function,  yeccpars2_60_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 121).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 121).
 yeccpars2_60_(__Stack0) ->
  [___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2133,7 +2133,7 @@ yeccpars2_60_(__Stack0) ->
 -compile({inline,yeccpars2_61_/1}).
 -dialyzer({nowarn_function, yeccpars2_61_/1}).
 -compile({nowarn_unused_function,  yeccpars2_61_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 133).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 133).
 yeccpars2_61_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2143,7 +2143,7 @@ yeccpars2_61_(__Stack0) ->
 -compile({inline,yeccpars2_63_/1}).
 -dialyzer({nowarn_function, yeccpars2_63_/1}).
 -compile({nowarn_unused_function,  yeccpars2_63_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 134).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 134).
 yeccpars2_63_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2153,7 +2153,7 @@ yeccpars2_63_(__Stack0) ->
 -compile({inline,yeccpars2_64_/1}).
 -dialyzer({nowarn_function, yeccpars2_64_/1}).
 -compile({nowarn_unused_function,  yeccpars2_64_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 122).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 122).
 yeccpars2_64_(__Stack0) ->
  [___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2163,7 +2163,7 @@ yeccpars2_64_(__Stack0) ->
 -compile({inline,yeccpars2_65_/1}).
 -dialyzer({nowarn_function, yeccpars2_65_/1}).
 -compile({nowarn_unused_function,  yeccpars2_65_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 124).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 124).
 yeccpars2_65_(__Stack0) ->
  [___4,___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2173,7 +2173,7 @@ yeccpars2_65_(__Stack0) ->
 -compile({inline,yeccpars2_66_/1}).
 -dialyzer({nowarn_function, yeccpars2_66_/1}).
 -compile({nowarn_unused_function,  yeccpars2_66_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 123).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 123).
 yeccpars2_66_(__Stack0) ->
  [___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2183,7 +2183,7 @@ yeccpars2_66_(__Stack0) ->
 -compile({inline,yeccpars2_68_/1}).
 -dialyzer({nowarn_function, yeccpars2_68_/1}).
 -compile({nowarn_unused_function,  yeccpars2_68_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 119).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 119).
 yeccpars2_68_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2193,7 +2193,7 @@ yeccpars2_68_(__Stack0) ->
 -compile({inline,yeccpars2_70_/1}).
 -dialyzer({nowarn_function, yeccpars2_70_/1}).
 -compile({nowarn_unused_function,  yeccpars2_70_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 111).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 111).
 yeccpars2_70_(__Stack0) ->
  [___4,___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2203,7 +2203,7 @@ yeccpars2_70_(__Stack0) ->
 -compile({inline,yeccpars2_71_/1}).
 -dialyzer({nowarn_function, yeccpars2_71_/1}).
 -compile({nowarn_unused_function,  yeccpars2_71_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 113).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 113).
 yeccpars2_71_(__Stack0) ->
  [___5,___4,___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2213,7 +2213,7 @@ yeccpars2_71_(__Stack0) ->
 -compile({inline,yeccpars2_72_/1}).
 -dialyzer({nowarn_function, yeccpars2_72_/1}).
 -compile({nowarn_unused_function,  yeccpars2_72_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 142).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 142).
 yeccpars2_72_(__Stack0) ->
  [___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2223,7 +2223,7 @@ yeccpars2_72_(__Stack0) ->
 -compile({inline,yeccpars2_75_/1}).
 -dialyzer({nowarn_function, yeccpars2_75_/1}).
 -compile({nowarn_unused_function,  yeccpars2_75_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 141).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 141).
 yeccpars2_75_(__Stack0) ->
  [___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2233,7 +2233,7 @@ yeccpars2_75_(__Stack0) ->
 -compile({inline,yeccpars2_77_/1}).
 -dialyzer({nowarn_function, yeccpars2_77_/1}).
 -compile({nowarn_unused_function,  yeccpars2_77_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 150).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 150).
 yeccpars2_77_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2243,7 +2243,7 @@ yeccpars2_77_(__Stack0) ->
 -compile({inline,yeccpars2_78_/1}).
 -dialyzer({nowarn_function, yeccpars2_78_/1}).
 -compile({nowarn_unused_function,  yeccpars2_78_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 155).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 155).
 yeccpars2_78_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2253,7 +2253,7 @@ yeccpars2_78_(__Stack0) ->
 -compile({inline,yeccpars2_79_/1}).
 -dialyzer({nowarn_function, yeccpars2_79_/1}).
 -compile({nowarn_unused_function,  yeccpars2_79_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 156).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 156).
 yeccpars2_79_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2263,7 +2263,7 @@ yeccpars2_79_(__Stack0) ->
 -compile({inline,yeccpars2_80_/1}).
 -dialyzer({nowarn_function, yeccpars2_80_/1}).
 -compile({nowarn_unused_function,  yeccpars2_80_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 159).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 159).
 yeccpars2_80_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2273,7 +2273,7 @@ yeccpars2_80_(__Stack0) ->
 -compile({inline,yeccpars2_81_/1}).
 -dialyzer({nowarn_function, yeccpars2_81_/1}).
 -compile({nowarn_unused_function,  yeccpars2_81_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 157).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 157).
 yeccpars2_81_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2283,7 +2283,7 @@ yeccpars2_81_(__Stack0) ->
 -compile({inline,yeccpars2_82_/1}).
 -dialyzer({nowarn_function, yeccpars2_82_/1}).
 -compile({nowarn_unused_function,  yeccpars2_82_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 154).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 154).
 yeccpars2_82_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2293,7 +2293,7 @@ yeccpars2_82_(__Stack0) ->
 -compile({inline,yeccpars2_84_/1}).
 -dialyzer({nowarn_function, yeccpars2_84_/1}).
 -compile({nowarn_unused_function,  yeccpars2_84_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 158).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 158).
 yeccpars2_84_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2303,7 +2303,7 @@ yeccpars2_84_(__Stack0) ->
 -compile({inline,yeccpars2_86_/1}).
 -dialyzer({nowarn_function, yeccpars2_86_/1}).
 -compile({nowarn_unused_function,  yeccpars2_86_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 148).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 148).
 yeccpars2_86_(__Stack0) ->
  [___4,___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2313,7 +2313,7 @@ yeccpars2_86_(__Stack0) ->
 -compile({inline,yeccpars2_87_/1}).
 -dialyzer({nowarn_function, yeccpars2_87_/1}).
 -compile({nowarn_unused_function,  yeccpars2_87_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 151).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 151).
 yeccpars2_87_(__Stack0) ->
  [___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2323,7 +2323,7 @@ yeccpars2_87_(__Stack0) ->
 -compile({inline,yeccpars2_89_/1}).
 -dialyzer({nowarn_function, yeccpars2_89_/1}).
 -compile({nowarn_unused_function,  yeccpars2_89_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 152).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 152).
 yeccpars2_89_(__Stack0) ->
  [___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2333,7 +2333,7 @@ yeccpars2_89_(__Stack0) ->
 -compile({inline,yeccpars2_90_/1}).
 -dialyzer({nowarn_function, yeccpars2_90_/1}).
 -compile({nowarn_unused_function,  yeccpars2_90_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 147).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 147).
 yeccpars2_90_(__Stack0) ->
  [___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2343,7 +2343,7 @@ yeccpars2_90_(__Stack0) ->
 -compile({inline,yeccpars2_91_/1}).
 -dialyzer({nowarn_function, yeccpars2_91_/1}).
 -compile({nowarn_unused_function,  yeccpars2_91_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 145).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 145).
 yeccpars2_91_(__Stack0) ->
  [___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2353,7 +2353,7 @@ yeccpars2_91_(__Stack0) ->
 -compile({inline,yeccpars2_92_/1}).
 -dialyzer({nowarn_function, yeccpars2_92_/1}).
 -compile({nowarn_unused_function,  yeccpars2_92_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 144).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 144).
 yeccpars2_92_(__Stack0) ->
  [___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2363,7 +2363,7 @@ yeccpars2_92_(__Stack0) ->
 -compile({inline,yeccpars2_93_/1}).
 -dialyzer({nowarn_function, yeccpars2_93_/1}).
 -compile({nowarn_unused_function,  yeccpars2_93_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 108).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 108).
 yeccpars2_93_(__Stack0) ->
  [___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2373,7 +2373,7 @@ yeccpars2_93_(__Stack0) ->
 -compile({inline,yeccpars2_94_/1}).
 -dialyzer({nowarn_function, yeccpars2_94_/1}).
 -compile({nowarn_unused_function,  yeccpars2_94_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 94).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 94).
 yeccpars2_94_(__Stack0) ->
  [___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2383,7 +2383,7 @@ yeccpars2_94_(__Stack0) ->
 -compile({inline,yeccpars2_95_/1}).
 -dialyzer({nowarn_function, yeccpars2_95_/1}).
 -compile({nowarn_unused_function,  yeccpars2_95_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 105).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 105).
 yeccpars2_95_(__Stack0) ->
  [___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2393,7 +2393,7 @@ yeccpars2_95_(__Stack0) ->
 -compile({inline,yeccpars2_96_/1}).
 -dialyzer({nowarn_function, yeccpars2_96_/1}).
 -compile({nowarn_unused_function,  yeccpars2_96_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 103).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 103).
 yeccpars2_96_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2403,7 +2403,7 @@ yeccpars2_96_(__Stack0) ->
 -compile({inline,yeccpars2_99_/1}).
 -dialyzer({nowarn_function, yeccpars2_99_/1}).
 -compile({nowarn_unused_function,  yeccpars2_99_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 79).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 79).
 yeccpars2_99_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2413,7 +2413,7 @@ yeccpars2_99_(__Stack0) ->
 -compile({inline,yeccpars2_100_/1}).
 -dialyzer({nowarn_function, yeccpars2_100_/1}).
 -compile({nowarn_unused_function,  yeccpars2_100_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 78).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 78).
 yeccpars2_100_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2423,7 +2423,7 @@ yeccpars2_100_(__Stack0) ->
 -compile({inline,yeccpars2_102_/1}).
 -dialyzer({nowarn_function, yeccpars2_102_/1}).
 -compile({nowarn_unused_function,  yeccpars2_102_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 80).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 80).
 yeccpars2_102_(__Stack0) ->
  [___1 | __Stack] = __Stack0,
  [begin
@@ -2433,7 +2433,7 @@ yeccpars2_102_(__Stack0) ->
 -compile({inline,yeccpars2_103_/1}).
 -dialyzer({nowarn_function, yeccpars2_103_/1}).
 -compile({nowarn_unused_function,  yeccpars2_103_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 63).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 63).
 yeccpars2_103_(__Stack0) ->
  [___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2443,7 +2443,7 @@ yeccpars2_103_(__Stack0) ->
 -compile({inline,yeccpars2_104_/1}).
 -dialyzer({nowarn_function, yeccpars2_104_/1}).
 -compile({nowarn_unused_function,  yeccpars2_104_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 62).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 62).
 yeccpars2_104_(__Stack0) ->
  [___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2453,7 +2453,7 @@ yeccpars2_104_(__Stack0) ->
 -compile({inline,yeccpars2_105_/1}).
 -dialyzer({nowarn_function, yeccpars2_105_/1}).
 -compile({nowarn_unused_function,  yeccpars2_105_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 55).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 55).
 yeccpars2_105_(__Stack0) ->
  [___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2463,7 +2463,7 @@ yeccpars2_105_(__Stack0) ->
 -compile({inline,yeccpars2_107_/1}).
 -dialyzer({nowarn_function, yeccpars2_107_/1}).
 -compile({nowarn_unused_function,  yeccpars2_107_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 56).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 56).
 yeccpars2_107_(__Stack0) ->
  [___4,___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2473,7 +2473,7 @@ yeccpars2_107_(__Stack0) ->
 -compile({inline,yeccpars2_109_/1}).
 -dialyzer({nowarn_function, yeccpars2_109_/1}).
 -compile({nowarn_unused_function,  yeccpars2_109_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 61).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 61).
 yeccpars2_109_(__Stack0) ->
  [___4,___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2483,7 +2483,7 @@ yeccpars2_109_(__Stack0) ->
 -compile({inline,yeccpars2_110_/1}).
 -dialyzer({nowarn_function, yeccpars2_110_/1}).
 -compile({nowarn_unused_function,  yeccpars2_110_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 60).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 60).
 yeccpars2_110_(__Stack0) ->
  [___4,___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2493,7 +2493,7 @@ yeccpars2_110_(__Stack0) ->
 -compile({inline,yeccpars2_112_/1}).
 -dialyzer({nowarn_function, yeccpars2_112_/1}).
 -compile({nowarn_unused_function,  yeccpars2_112_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 57).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 57).
 yeccpars2_112_(__Stack0) ->
  [___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2503,7 +2503,7 @@ yeccpars2_112_(__Stack0) ->
 -compile({inline,yeccpars2_114_/1}).
 -dialyzer({nowarn_function, yeccpars2_114_/1}).
 -compile({nowarn_unused_function,  yeccpars2_114_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 58).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 58).
 yeccpars2_114_(__Stack0) ->
  [___4,___3,___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2513,7 +2513,7 @@ yeccpars2_114_(__Stack0) ->
 -compile({inline,yeccpars2_115_/1}).
 -dialyzer({nowarn_function, yeccpars2_115_/1}).
 -compile({nowarn_unused_function,  yeccpars2_115_/1}).
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 66).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 66).
 yeccpars2_115_(__Stack0) ->
  [___2,___1 | __Stack] = __Stack0,
  [begin
@@ -2521,4 +2521,4 @@ yeccpars2_115_(__Stack0) ->
   end | __Stack].
 
 
--file("/home/williamthome/Projects/bel_framework/bel_css_parser/src/bel_css_3_selector_parse.yrl", 181).
+-file("/home/williamthome/Projects/bel_framework/bel_css/src/bel_css_3_selector_parser.yrl", 181).
