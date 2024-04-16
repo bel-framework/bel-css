@@ -71,14 +71,14 @@ Rules.
 {INVALID}     : {error, "invalid syntax: " ++ TokenChars}. % INVALID;
 % \<\!\-\-      : {token, {cdo, TokenLoc}}. % CDO;
 % \-\-\>        : {token, {cdc, TokenLoc}}. % CDC;
-\#{NAME}      : {token, {hash, TokenLoc, tl(TokenChars)}}. % HASH;
-{NUM}{IDENT}  : {token, {dimension, TokenLoc, TokenChars}}. % DIMENSION;
-{IDENT}\(     : {token, {'function', TokenLoc, lists:droplast(TokenChars)}}. % FUNCTION;
-% \@{IDENT}     : {token, {at_keyword, TokenLoc, TokenChars}}. % ATKEYWORD;
-{IDENT}       : {token, {ident, TokenLoc, TokenChars}}. % IDENT;
-{NUM}\%       : {token, {percentage, TokenLoc, TokenChars}}. % PERCENTAGE;
-{NUM}         : {token, {number, TokenLoc, TokenChars}}. % NUMBER;
-{STRING}      : {token, {string, TokenLoc, TokenChars}}. % STRING;
+\#{NAME}      : {token, {hash, TokenLoc, to_bin(tl(TokenChars))}}. % HASH;
+{NUM}{IDENT}  : {token, {dimension, TokenLoc, to_bin(TokenChars)}}. % DIMENSION;
+{IDENT}\(     : {token, {'function', TokenLoc, to_bin(lists:droplast(TokenChars))}}. % FUNCTION;
+% \@{IDENT}     : {token, {at_keyword, TokenLoc, to_bin(TokenChars)}}. % ATKEYWORD;
+{IDENT}       : {token, {ident, TokenLoc, to_bin(TokenChars)}}. % IDENT;
+{NUM}\%       : {token, {percentage, TokenLoc, to_bin(TokenChars)}}. % PERCENTAGE;
+{NUM}         : {token, {number, TokenLoc, to_bin(TokenChars)}}. % NUMBER;
+{STRING}      : {token, {string, TokenLoc, to_bin(lists:droplast(tl(TokenChars)))}}. % STRING;
 SKIP          : skip_token.
 
 % NOTE: The symbols below aren't in the source grammar.
@@ -94,4 +94,5 @@ SKIP          : skip_token.
 
 Erlang code.
 
-% nothing here yet!
+to_bin(String) ->
+    iolist_to_binary(String).

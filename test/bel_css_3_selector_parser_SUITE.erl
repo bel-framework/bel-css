@@ -135,39 +135,28 @@ all() ->
 
 parse(Config) when is_list(Config) ->
     Expect = [
-        % 1
-        {greater,{
-            % Left
-            [{id,"foo"}],
-            % Right
-            {plus,{
-                % Left
-                [{class,"bar"}],
-                % Right
-                {space,{
-                    % Left
-                    [{type,{undefined,"div"}},{class,"k1"},{class,"k2"}],
-                    % Right
-                    [{attrib,{undefined,"id",{'=',{string,"'baz'"}}}},
-                        {pseudo_class,{function,{"hello",[{number,"2"}]}}},
+        {greater,
+            {[{id,<<"foo">>}],
+            {plus,
+                {[{class,<<"bar">>}],
+                {space,
+                    {[{type,{undefined,<<"div">>}},
+                        {class,<<"k1">>},
+                        {class,<<"k2">>}],
+                        [{attrib,
+                            {undefined,<<"id">>,{'=',{string,<<"baz">>}}}},
+                        {pseudo_class,
+                            {function,{<<"hello">>,[{number,<<"2">>}]}}},
                         {negation,
-                            {pseudo_class,{function,{"where",[{ident,"div"}]}}}},
-                        {pseudo_class,{ident,"before"}}]
-                }}
-            }}
-        }},
-        % 2
-        {plus,{
-            % Left
-            [{id,"bar"}],
-            % Right
-            {space,{
-                % Left
-                [{class,"baz"},{class,"fizz"}],
-                % Right
-                [{type,{undefined,"div"}},{class,"buzz"}]
-            }}
-        }}
+                            {pseudo_class,
+                                {function,
+                                    {<<"where">>,[{ident,<<"div">>}]}}}},
+                        {pseudo_element,{ident,<<"before">>}}]}}}}}},
+        {plus,
+            {[{id,<<"bar">>}],
+            {space,
+                {[{class,<<"baz">>},{class,<<"fizz">>}],
+                [{type,{undefined,<<"div">>}},{class,<<"buzz">>}]}}}}
     ],
     String = "#foo > .bar + div.k1.k2 [id='baz']:hello(2):not(:where(div))::before, #bar + .baz.fizz div.buzz",
     {ok, Tokens, _} = bel_css_3_selector_scan:string(String),
