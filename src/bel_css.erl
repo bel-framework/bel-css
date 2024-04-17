@@ -28,8 +28,10 @@
 %%% CSS3
 %%%=====================================================================
 
-scan_css3(String) ->
-    bel_css_3_selector_scan:string(String).
+scan_css3(String) when is_list(String) ->
+    bel_css_3_selector_scan:string(String);
+scan_css3(String) when is_binary(String) ->
+    scan_css3(binary_to_list(String)).
 
-parse_css3(Tokens) ->
+parse_css3(Tokens) when is_list(Tokens) ->
     bel_css_3_selector_parser:parse(Tokens).
